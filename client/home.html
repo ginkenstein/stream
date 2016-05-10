@@ -1,0 +1,28 @@
+<template name="home">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 align=center>Search.Watch.Drill.</h1>   
+            <p>This is a prototype for demonstrating real time, off-the-wire twitter analytics, basic stats, and mapping of suedo generated geolcoations of found tweets using reactive JS technologies.</p>
+            <p><a class="btn btn-primary btn-lg" href="{{pathFor route='tweets'}}" role="button">Get started &raquo;</a></p>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Search</h2>
+          <p>Locate real time Tweets using Twitter's off-the-wire stream using search terms, and further isolate using keyword triggers.</p>
+          <p><a class="btn btn-default" href="{{pathFor route='tweets'}}" role="button">Find Tweets &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Watch</h2>
+          <p>Watch the stream track by your criteria real time and isolate filtered tweets by keyword and language association. View top tweet senders, tweet matches vs. keywords identified by volume, and traffic on real time charts and maps.</p>
+          <p><a class="btn btn-default" href="{{pathFor route='stats'}}" role="button">View Stats &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Drill</h2>
+          <p>Use islocated tweets and (suedo) geplocations plotted on maps with 20M accuracy to identify Twitter users,  review their profile and tweet history.</p>
+          <p><a class="btn btn-default" href="{{pathFor route='map'}}" role="button">View Map &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+</template>

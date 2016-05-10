@@ -1,0 +1,26 @@
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+/*
+html { 
+  background: url('/images/cybermap.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+.page-wrapper {
+  background-color: rgb(255, 255, 255);
+  padding: 5px 30px 30px 30px;
+}

@@ -1,0 +1,22 @@
+<template name="tweetDrill">  
+   <h3>&nbsp;Top 10 Keyword Tweeters</h3>
+   <br>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Tweet ID</th>
+            <th>User Name</th>
+            <th>Screen Name</th>
+          </tr>
+        </thead>
+        <tbody>
+         {{#each keywordTweeter}}               
+          <tr>
+           <td>{{_id}}</td>
+           <td>{{user}}</td>
+           <td>@{{userscreen}}</td>
+          </tr>
+         {{/each}}
+        </tbody>
+      </table>
+</template>

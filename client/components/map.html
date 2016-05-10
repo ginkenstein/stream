@@ -1,0 +1,20 @@
+<template name="map">
+  <div class="page-wrapper">
+    <div class="page-header">
+      <h1>Tweet Geolocations</h1>
+    </div>
+  <table width="100%">
+    <tr>
+      <td align="left"><img src="http://maps.google.com/mapfiles/ms/icons/green-dot.png" /> Keyword Geolocators (click markers for details)<br>Heatmap shows density of total tweets filtered</td>
+      <td align="right">
+        <!--<button class="toggle-flag" disabled>Heatmap (On/Off)</button>
+        -->
+      </td>
+    </tr>
+  </table>
+    <div class="map-container">
+      {{> googleMap name="map" options=mapOptions}}
+    </div>
+  </div>
+
+</template>

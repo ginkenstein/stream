@@ -1,0 +1,66 @@
+<template name="tweets">
+     <div class="page-wrapper">
+    <div class="page-header">
+        <H1>Tweet Finder</H1>
+    </div>
+    <form class="new-term">
+        <table>
+            <tr>
+                <td>Twitter Filter Term(s)</td>
+                <td>Isolating Keyword</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="textinput" size="50" placeholder="Type to search new term(s) separated commas" value={{searchTerm}} />&nbsp;
+                </td>
+                <td>
+                    <input type="text" name="keywordinput" size="25" placeholder="Isolating keyword (optional)" value={{keywordTerm}} />&nbsp;
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-success">Go</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div style="margin-top: 5px;">
+        <table width="100%" align=center>
+            <tr>
+                <td align=left><button class="stop-stream">{{streamButton}}</button>
+                    <button class="clear-stream" {{resetButtonState}}>Clear Data</button></td>
+                <td align=right><button class="toggle-stream">Stream (on/off)</button>
+                    <button class="toggle-chart">Chart (on/off)</button>
+                    <button class="toggle-map">Map (on/off)</button></td>
+            </tr>            
+        </table>
+    </div>
+    <br>
+    {{> analytics}}
+
+    {{#if showChart }}
+        <br>
+        <div class="chart">
+            {{> canvaschart}}
+        </div>
+    {{/if}}
+    
+    {{#if showMap }}
+        {{> map}}
+    {{/if}}
+    
+    {{#if showStream}}
+    <br>
+    <div>
+      <table class="table table-striped">
+        <tbody>
+        {{#each tweets}}
+        <tr>
+            <td>{{> tweetItem}}</td>
+        </tr>
+        {{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/if}}
+     </div>
+</template>
