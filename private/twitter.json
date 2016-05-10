@@ -1,10 +1,10 @@
 {
   "consumer": {
-    "key": "oxtZ6iwm7NZDp53wsW2gNvhBp",
-    "secret": "lnB1REU6gYIWWvoVPc8OGow3AxD6hZu8Sr34808ImWxsyRhE8H"
+    "key": "<key>",
+    "secret": "<secret>"
   },
   "access_token": {
-    "key": "4483683149-4UrakDBuknR42EWKQioGxRaER2E4GAAzzMqGJJp",
-    "secret": "tNZca1ENqYeBtGpuPdXGiCcQALn1p47xHg9fgudXaeR2Z"
+    "key": "<token>",
+    "secret": "<secret>"
   }
 }
