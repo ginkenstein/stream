@@ -1,4 +1,4 @@
-var apiKey = "AIzaSyCQtDje6zV7Qzpk-V4zV3Pe8cNAHrsF6o8";
+var apiKey = "<key here>";
 Session.set("toggleFlags", false);
 
 //temp vars for geo coords since Twitter doesn't do them centering Kansas City
