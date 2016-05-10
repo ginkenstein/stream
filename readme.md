@@ -32,7 +32,12 @@ meteor mongo
 ...
 3a. Connect to MongoDB using an IDE (eg. robomongo) via [localhost:3000] (http://localhost:3001)
 
-## Potenial Issues
+## Potential Issues
 1. You may have to update packages if they are incompatible with a newer Meteor version. Run meteor update
 2. You may get NPM Require errors on the initial execution. Simply delete <packages> directory from the project and re-run the meteor command
 3. Mozilla Firefox is the preferred browser, or > IE 11, Chrome
+4. 
+
+## Keys
+1. replace twitter.JSON keys with your own keys
+2. replace Google Map API key with your own keys in map.js
